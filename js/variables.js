@@ -1,5 +1,5 @@
 // canvas size
-const SIZE = 0.6; // size of the canvas in relation to the screen (0 to 1)
+const SIZE = 0.8; // size of the canvas in relation to the screen (0 to 1)
 
 // remote position on the screen
 let x;
