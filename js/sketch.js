@@ -58,6 +58,7 @@ function mouseClicked()
 function mouseOnRemote()
 {
     let mousePos = createVector(mouseX,mouseY);
+    console.log(remotePos.dist(mousePos));
     if(remotePos.dist(mousePos) < distRemote)
         return true;
     return false;
@@ -153,8 +154,8 @@ function stateMachine()
             image(sleeping_zzz[idxZzz], 0, 0);   
             
             // change mouse icon
-            if(mouseOnRemote)
-                cursor('grab');
+            if(mouseOnRemote())
+                cursor('grab');      
             else
                 cursor(ARROW);
 
